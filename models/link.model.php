@@ -6,6 +6,8 @@ class LinksModels
         if (
             $Link === 'user' ||
             $Link === 'product' ||
+            $Link === 'out' ||
+            $Link === 'sale' ||
             $Link === 'login'
         ) {
             $component = 'views/components/' . $Link . '.php';

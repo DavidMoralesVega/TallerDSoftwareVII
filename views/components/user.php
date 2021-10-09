@@ -1,3 +1,8 @@
+<?php
+    $Header = new TemplateControllers();
+    $Header -> GetHeaderController();
+?>
+
 <!--Main layout-->
 <main style="margin-top: 58px">
     <div class="container py-4">
@@ -23,10 +28,30 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
-                        <p>Lista de usuarios...</p>
+
+                            <table class="table" id="TableUser">
+
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Cédula de identidad</th>
+                                        <th scope="col">Dirección</th>
+                                        <th scope="col">Celular</th>
+                                        <th scope="col">Correo</th>
+                                        <th scope="col">Tipo</th>
+                                        <th scope="col">Estado</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody></tbody>
+
+                            </table>
+
+
                         </div>
 
-                       
+
                     </div>
                 </div>
             </div>
@@ -52,35 +77,35 @@
             </div>
             <div class="modal-body">
 
-            <div class="form-outline mb-4">
-                <input type="text" id="AUName" class="form-control" />
-                <label class="form-label" for="AUName">Nombre</label>
-            </div>
+                <div class="form-outline mb-4">
+                    <input type="text" id="AUName" class="form-control" />
+                    <label class="form-label" for="AUName">Nombre</label>
+                </div>
 
-            <div class="form-outline mb-4">
-                <input type="text" id="AUIdentity" class="form-control" />
-                <label class="form-label" for="AUIdentity">Cédula de identidad</label>
-            </div>
+                <div class="form-outline mb-4">
+                    <input type="text" id="AUIdentity" class="form-control" />
+                    <label class="form-label" for="AUIdentity">Cédula de identidad</label>
+                </div>
 
-            <div class="form-outline mb-4">
-                <input type="text" id="AUAddress" class="form-control" />
-                <label class="form-label" for="AUAddress">Dirección</label>
-            </div>
+                <div class="form-outline mb-4">
+                    <input type="text" id="AUAddress" class="form-control" />
+                    <label class="form-label" for="AUAddress">Dirección</label>
+                </div>
 
-            <div class="form-outline mb-4">
-                <input type="number" id="AUCellular" class="form-control" />
-                <label class="form-label" for="AUCellular">Celular</label>
-            </div>
+                <div class="form-outline mb-4">
+                    <input type="number" id="AUCellular" class="form-control" />
+                    <label class="form-label" for="AUCellular">Celular</label>
+                </div>
 
-            <div class="form-outline mb-4">
-                <input type="email" id="AUEmail" class="form-control" />
-                <label class="form-label" for="AUEmail">Correo electrónico</label>
-            </div>
+                <div class="form-outline mb-4">
+                    <input type="email" id="AUEmail" class="form-control" />
+                    <label class="form-label" for="AUEmail">Correo electrónico</label>
+                </div>
 
-            <select id="AUType" class="select mb-4">
-                <option value="Administrador">Administrador</option>
-                <option value="Secretaria">Secretaria</option>
-            </select>
+                <select id="AUType" class="select mb-4">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Secretaria">Secretaria</option>
+                </select>
 
             </div>
             <div class="modal-footer">
@@ -93,3 +118,4 @@
     </div>
 </div>
 <!-- Modal Add User -->
+
